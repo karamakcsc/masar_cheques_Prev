@@ -86,7 +86,16 @@ app_license = "GNU General Public License"
 # 		"on_trash": "method"
 #	}
 # }
+doc_events = {
+    "Payment Entry": {
+        "on_update": "masar_cheques.custom.payment_entry.payment_entry.click_test_button"
+    }
+}
 
+
+doctype_js = {
+    "Payment Entry" : "custom/payment_entry/payment_entry.js"
+ }
 # Scheduled Tasks
 # ---------------
 
@@ -152,4 +161,3 @@ fixtures = [
     ]}
 
 ]
-
